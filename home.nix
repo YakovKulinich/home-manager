@@ -94,6 +94,12 @@ in
         [[ ! -f ${p10k.zsh} ]] || source ${p10k.zsh}
       '';
 
+      shellAliases = {
+        ll = "ls -la";
+        gs = "git status";
+        docker-compose = "docker compose";
+      };
+
     };
 
     # Enable and configure fzf
